@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta
+            name="viewport"
+            content="width=device-width, initial-scale=1.0"
+        />
+        <script>
+            function changeGreen() {
+                const square = document.getElementById("square1");
+                square.style.background = "green";
+            }
+            function changeRed() {
+                const square = document.getElementById("square1");
+                square.style.background = "red";
+            }
+            function changeBlue() {
+                const square = document.getElementById("square1");
+                square.style.background = "blue";
+            }
+        </script>
+        <title>Changing Colors!</title>
+    </head>
+    <body>
+        <style media="screen">
+            .square {
+                width: 250px;
+                height: 250px;
+                background: green;
+                transition: background 2s;
+            }
+        </style>
+        <div
+            id="square1"
+            class="square"
+        ></div>
+        <button onclick="changeGreen()">Change to Green!</button>
+        <button onclick="changeRed()">Change to Red!</button>
+        <button onclick="changeBlue()">Change to Blue!</button>
+    </body>
+</html>
