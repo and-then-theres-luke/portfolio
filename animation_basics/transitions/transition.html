@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta
+            name="viewport"
+            content="width=device-width, initial-scale=1.0"
+        />
+        <title>CSS Transition</title>
+        <script>
+            function fadeOut() {
+                const square = document.getElementById("square1");
+                square.style.opacity = 0;
+            }
+        </script>
+    </head>
+    <body>
+        <style media="screen">
+            .square {
+                width: 250px;
+                height: 250px;
+                background: green;
+                transition: opacity 2s;
+            }
+        </style>
+        <div
+            id="square1"
+            class="square"
+        ></div>
+        <button
+            type="button"
+            onclick="fadeOut()"
+        >
+            Fade Out
+        </button>
+    </body>
+</html>
