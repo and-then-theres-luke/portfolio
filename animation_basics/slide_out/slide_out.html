@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta
+            name="viewport"
+            content="width=device-width, initial-scale=1.0"
+        />
+        <script>
+            function slideOut(el) {
+                let elem = document.getElementById(el);
+                elem.style.transition = "height 0.2s linear 0s";
+                if (elem.style.height == "0px") {
+                    elem.style.height = "250px";
+                } else {
+                    elem.style.height = "0px";
+                }
+            }
+        </script>
+        <title>Changing Colors!</title>
+    </head>
+    <body>
+        <style media="screen">
+            .square {
+                width: 250px;
+                height: 250px;
+                background: green;
+                transition: background 2s;
+            }
+        </style>
+        <div
+            id="square1"
+            class="square"
+        ></div>
+        <button onclick="slideOut('square1')">Open or Close!</button>
+    </body>
+</html>
