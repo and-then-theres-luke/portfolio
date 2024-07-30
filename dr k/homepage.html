@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta
+            name="viewport"
+            content="width=device-width, initial-scale=1.0"
+        />
+        <link
+            rel="stylesheet"
+            href="./style.css"
+        />
+        <title>Doctor K Wellness Plans</title>
+    </head>
+    <body>
+        <nav id="expand">
+            <div id="logo">Logo goes here</div>
+            <div id="links">
+                <a href="#">Plans</a>
+                <a href="#">Pricing</a>
+                <a href="#">About</a>
+                <a href="#">Blog</a>
+                <button>Get Started</button>
+            </div>
+        </nav>
+        <!-- <div id="top-splash">
+            <h1>Personal Wellness</h1>
+            <h1>Made Easy</h1>
+        </div> -->
+        <script>
+            function changeHeight() {
+                var scroll = window.pageYOffset / 50;
+                var height = 20 - scroll;
+
+                document.getElementById("expand").style.height = height + "vh";
+            }
+            window.addEventListener("scroll", () => {
+                requestAnimationFrame(changeHeight);
+            });
+        </script>
+    </body>
+</html>

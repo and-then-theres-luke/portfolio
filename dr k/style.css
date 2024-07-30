@@ -1,0 +1,39 @@
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: fixed;
+    height: 20vh;
+    width: 80vw;
+    min-height: 8vh;
+    padding: 10px 10%;
+    background-color: #c8d2e4;
+    top: 0;
+}
+
+nav #logo {
+    flex: 2;
+}
+
+nav #links a {
+    flex: 2;
+    flex-direction: row;
+    margin: 10px;
+}
+
+body {
+    height: 9000px;
+    background-color: #fff;
+}
+
+#top-splash {
+    display: flex;
+    flex-direction: column;
+    background-color: #c8d2e4;
+    align-items: center;
+    justify-content: center;
+    height: 80vh;
+}
+
+#top-splash h1 {
+}
