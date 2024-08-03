@@ -10,32 +10,62 @@
             rel="stylesheet"
             href="./style.css"
         />
+        <link
+            rel="preconnect"
+            href="https://fonts.googleapis.com"
+        />
+        <link
+            rel="preconnect"
+            href="https://fonts.gstatic.com"
+            crossorigin
+        />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Playwrite+BE+VLG:wght@100..400&display=swap"
+            rel="stylesheet"
+        />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Playwrite+BE+VLG&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap"
+            rel="stylesheet"
+        />
+
         <title>Doctor K Wellness Plans</title>
     </head>
     <body>
-        <nav id="expand">
+        <nav
+            class="navbar"
+            id="navbar"
+        >
             <div id="logo">Logo goes here</div>
             <div id="links">
-                <a href="#">Plans</a>
-                <a href="#">Pricing</a>
+                <a
+                    class="playwrite-be-vlg-mainsplash"
+                    href="#"
+                    >Plans</a
+                >
+                <a
+                    class="playwrite-be-vlg-mainsplash"
+                    href="#"
+                    >Pricing</a
+                >
                 <a href="#">About</a>
                 <a href="#">Blog</a>
                 <button>Get Started</button>
             </div>
         </nav>
-        <!-- <div id="top-splash">
-            <h1>Personal Wellness</h1>
-            <h1>Made Easy</h1>
-        </div> -->
+        <div id="top-splash">
+            <h1 class="roboto-condensed-mainsplash">
+                Personal Wellness <br />
+                <span class="playwrite-be-vlg-mainsplash">Made Easy</span>
+            </h1>
+        </div>
         <script>
-            function changeHeight() {
-                var scroll = window.pageYOffset / 50;
-                var height = 20 - scroll;
-
-                document.getElementById("expand").style.height = height + "vh";
-            }
-            window.addEventListener("scroll", () => {
-                requestAnimationFrame(changeHeight);
+            window.addEventListener("scroll", function () {
+                const navbar = document.getElementById("navbar");
+                if (window.scrollY > 50) {
+                    navbar.classList.add("scrolled");
+                } else {
+                    navbar.classList.remove("scrolled");
+                }
             });
         </script>
     </body>
