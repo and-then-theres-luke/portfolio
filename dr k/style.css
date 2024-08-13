@@ -11,13 +11,14 @@
     background-color: #c8d2e4;
     transition: all 0.3s ease;
     top: 0;
+    z-index: 1000;
 }
 
 .navbar.scrolled {
-    background-color: #fff;
+    background-color: #37435b;
     height: 8vh;
     box-shadow: 0px 4px 2px -2px gray;
-}
+}   
 
 nav #logo {
     flex: 2;
@@ -45,7 +46,7 @@ nav #links a {
 
 body {
     height: 9000px;
-    background-color: #fff;
+    background-color: #c8d2e4;
 }
 
 #top-splash {
@@ -54,11 +55,9 @@ body {
     background-color: #c8d2e4;
     align-items: center;
     justify-content: center;
-    height: 80vh;
+    height: 110vh;
 }
 
-#top-splash h1 {
-}
 
 .shadow {
     box-shadow: 0 1px 2px rgba(0, 0, 0, 0.15);
@@ -68,4 +67,77 @@ body {
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
     opacity: 1;
     transition: opacity 0.3s ease-in-out;
+}
+
+.slideshow-container {
+    display: flex;
+    height: 50vh;
+    width:100%;
+}
+
+.mySlides {
+    height: 100px;
+}
+
+
+.prev, .next {
+    opacity: 100%;
+    cursor: pointer;
+    width: auto;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+    z-index: 1000;
+    align-self: center;
+    color: black;
+  }
+
+.slideImage {
+    height: auto;
+    width: inherit;
+}
+
+.arrowContainer {
+    position: relative;
+    opacity: 20%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    border-radius: 100px;
+    align-self: center;
+    width: 50px;
+    height: 50px;
+    z-index: 999;
+    cursor: pointer;
+}
+
+.arrowContainerLeft {
+    left: 60px;
+}
+
+.arrowContainerRight {
+    right: 60px;
+}
+
+.hidden {
+    opacity: 0;
+    transform: translateX(-100%);
+    transition: all 1s;
+}
+
+.show {
+    opacity: 1;
+    transform: translateX(0%);
+    transition: all 1s;
+}
+
+.slide
+
+.slideShow {
+    opacity: 1;
+    transform: translateX(0%);
+    transition: all 1s;
 }

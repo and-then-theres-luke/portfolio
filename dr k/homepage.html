@@ -58,15 +58,24 @@
                 <span class="playwrite-be-vlg-mainsplash">Made Easy</span>
             </h1>
         </div>
-        <script>
-            window.addEventListener("scroll", function () {
-                const navbar = document.getElementById("navbar");
-                if (window.scrollY > 50) {
-                    navbar.classList.add("scrolled");
-                } else {
-                    navbar.classList.remove("scrolled");
-                }
-            });
+        <div class="slideshow-container hidden">
+            <div class="arrowContainer arrowContainerLeft" onclick="plusSlides(-1)">
+                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            </div>
+            <div class="mySlides fade slideShow" id="slide1">
+                <img src="dragon1.png" class="slideImage"></img>
+            </div>
+            <div class="mySlides fade" id="slide2">
+                <img src="dragon2.jpeg" class="slideImage"></img>
+            </div>
+            <div class="mySlides fade" id="slide3">
+                <img src="dragon3.jpg" class="slideImage"></img>
+            </div>
+            <div class="arrowContainer arrowContainerRight" onclick="plusSlides(1)">
+                <a class="next" onclick="plusSlides(1)">&#10095;</a>
+            </div>
+        </div>
+        <script src="scripts.js">
         </script>
     </body>
 </html>
