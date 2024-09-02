@@ -1,3 +1,20 @@
+/* FONTS */
+
+.playwrite-be-vlg-mainsplash {
+    font-family: "Playwrite BE VLG", cursive;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: bold;
+}
+
+.roboto-condensed-mainsplash {
+    font-family: "Roboto Condensed", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+}
+/* NAVBAR */
+
 .navbar {
     display: flex;
     align-items: center;
@@ -20,23 +37,19 @@
     box-shadow: 0px 4px 2px -2px gray;
 }   
 
+
+nav a {
+    text-decoration: none;
+    color: #37435b;
+}
+
+.darklink {
+    color: white;
+}
 nav #logo {
     flex: 2;
 }
 
-.playwrite-be-vlg-mainsplash {
-    font-family: "Playwrite BE VLG", cursive;
-    font-optical-sizing: auto;
-    font-weight: 400;
-    font-style: bold;
-}
-
-.roboto-condensed-mainsplash {
-    font-family: "Roboto Condensed", sans-serif;
-    font-optical-sizing: auto;
-    font-weight: 500;
-    font-style: normal;
-}
 
 nav #links a {
     flex: 2;
@@ -44,15 +57,24 @@ nav #links a {
     margin: 10px;
 }
 
-body {
+/* BODY */
+
+#body {
     height: 9000px;
-    background-color: #c8d2e4;
 }
 
+.lightmode {
+    background-color: #c8d2e4;
+    transition: ease 0.3s;
+}
+
+.darkmode {
+    background-color: #37435b;
+    transition: ease 0.3s;
+}
 #top-splash {
     display: flex;
     flex-direction: column;
-    background-color: #c8d2e4;
     align-items: center;
     justify-content: center;
     height: 110vh;
@@ -128,16 +150,40 @@ body {
     transition: all 1s;
 }
 
-.show {
-    opacity: 1;
-    transform: translateX(0%);
-    transition: all 1s;
-}
-
-.slide
 
 .slideShow {
     opacity: 1;
     transform: translateX(0%);
     transition: all 1s;
+}
+
+/* pop up styling */
+
+.pop-up-screen {
+    height: 100vh;
+    width: 100vw;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: rgba(255, 192, 203, 0.3);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1002;
+}
+
+.pop-up-box {
+    background-color: white;
+    width: 500px;
+    height: 200px;
+    opacity: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    z-index: 1003;
+}
+
+.hidden-pop-up {
+    display: none;
 }

@@ -30,7 +30,7 @@
 
         <title>Doctor K Wellness Plans</title>
     </head>
-    <body>
+    <body class="lightmode" id="body">
         <nav
             class="navbar"
             id="navbar"
@@ -38,18 +38,23 @@
             <div id="logo">Logo goes here</div>
             <div id="links">
                 <a
-                    class="playwrite-be-vlg-mainsplash"
+                    class="playwrite-be-vlg-mainsplash navlink"
                     href="#"
                     >Plans</a
                 >
                 <a
-                    class="playwrite-be-vlg-mainsplash"
+                    class="playwrite-be-vlg-mainsplash navlink"
                     href="#"
                     >Pricing</a
-                >
-                <a href="#">About</a>
-                <a href="#">Blog</a>
+                    >
+                    <a 
+                    class="playwrite-be-vlg-mainsplash navlink"
+                    href="#">About</a>
+                    <a 
+                    class="playwrite-be-vlg-mainsplash navlink"
+                    href="#">Blog</a>
                 <button>Get Started</button>
+                <button onclick="darkmode()">darkmode</button>
             </div>
         </nav>
         <div id="top-splash">
@@ -62,7 +67,7 @@
             <div class="arrowContainer arrowContainerLeft" onclick="plusSlides(-1)">
                 <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
             </div>
-            <div class="mySlides fade slideShow" id="slide1">
+            <div class="mySlides fade show" id="slide1">
                 <img src="dragon1.png" class="slideImage"></img>
             </div>
             <div class="mySlides fade" id="slide2">
@@ -73,6 +78,13 @@
             </div>
             <div class="arrowContainer arrowContainerRight" onclick="plusSlides(1)">
                 <a class="next" onclick="plusSlides(1)">&#10095;</a>
+            </div>
+        </div>
+        <div class="pop-up-screen hidden-pop-up" id="popUpScreen">
+            <div class="pop-up-box">
+                <p>subscribe to our newsletter for some discounts or something, idk</p>
+                <input type="text">
+                <button onclick="removePopUp()">Sure.</button>
             </div>
         </div>
         <script src="scripts.js">
