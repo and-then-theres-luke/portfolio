@@ -35,8 +35,7 @@
     background-color: #37435b;
     height: 8vh;
     box-shadow: 0px 4px 2px -2px gray;
-}   
-
+}
 
 nav a {
     text-decoration: none;
@@ -50,7 +49,6 @@ nav #logo {
     flex: 2;
 }
 
-
 nav #links a {
     flex: 2;
     flex-direction: row;
@@ -61,6 +59,10 @@ nav #links a {
 
 #body {
     height: 9000px;
+    padding-left: 10%;
+    padding-right: 10%;
+    display: flex;
+    justify-content: center;
 }
 
 .lightmode {
@@ -80,7 +82,12 @@ nav #links a {
     height: 110vh;
 }
 
-
+.splash-divider-one {
+    width: 100vw;
+    height: 40px;
+    background-color: #fde1e0;
+    box-shadow: 0px -25px 15px #fde1e0;
+}
 .shadow {
     box-shadow: 0 1px 2px rgba(0, 0, 0, 0.15);
 }
@@ -91,39 +98,39 @@ nav #links a {
     transition: opacity 0.3s ease-in-out;
 }
 
+/* slideshow styling */
+
 .slideshow-container {
     display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #fde1e0;
+    height: 120vh;
+    /* width: 100%; */
+}
+
+.slideshow {
     height: 50vh;
-    width:100%;
+    width: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
 }
 
 .mySlides {
-    height: 100px;
+    height: 40vh;
+    width: 40vh;
+    display: none;
 }
-
-
-.prev, .next {
-    opacity: 100%;
-    cursor: pointer;
-    width: auto;
-    font-weight: bold;
-    font-size: 18px;
-    transition: 0.6s ease;
-    border-radius: 0 3px 3px 0;
-    user-select: none;
-    z-index: 1000;
-    align-self: center;
-    color: black;
-  }
 
 .slideImage {
-    height: auto;
-    width: inherit;
+    height: inherit;
+    width: auto;
 }
 
-.arrowContainer {
+.arrowContainerLeft {
     position: relative;
-    opacity: 20%;
+    opacity: 40%;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -134,22 +141,24 @@ nav #links a {
     height: 50px;
     z-index: 999;
     cursor: pointer;
-}
-
-.arrowContainerLeft {
-    left: 60px;
+    left: -60px;
 }
 
 .arrowContainerRight {
-    right: 60px;
+    position: relative;
+    opacity: 40%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    border-radius: 100px;
+    align-self: center;
+    width: 50px;
+    height: 50px;
+    z-index: 999;
+    cursor: pointer;
+    right: -60px;
 }
-
-.hidden {
-    opacity: 0;
-    transform: translateX(-100%);
-    transition: all 1s;
-}
-
 
 .slideShow {
     opacity: 1;
@@ -157,6 +166,12 @@ nav #links a {
     transition: all 1s;
 }
 
+.show {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    transition: all 0.3s ease;
+}
 /* pop up styling */
 
 .pop-up-screen {

@@ -30,7 +30,10 @@
 
         <title>Doctor K Wellness Plans</title>
     </head>
-    <body class="lightmode" id="body">
+    <body
+        class="lightmode"
+        id="body"
+    >
         <nav
             class="navbar"
             id="navbar"
@@ -46,48 +49,104 @@
                     class="playwrite-be-vlg-mainsplash navlink"
                     href="#"
                     >Pricing</a
-                    >
-                    <a 
+                >
+                <a
                     class="playwrite-be-vlg-mainsplash navlink"
-                    href="#">About</a>
-                    <a 
+                    href="#"
+                    >About</a
+                >
+                <a
                     class="playwrite-be-vlg-mainsplash navlink"
-                    href="#">Blog</a>
+                    href="#"
+                    >Blog</a
+                >
                 <button>Get Started</button>
                 <button onclick="darkmode()">darkmode</button>
             </div>
         </nav>
-        <div id="top-splash">
-            <h1 class="roboto-condensed-mainsplash">
-                Personal Wellness <br />
-                <span class="playwrite-be-vlg-mainsplash">Made Easy</span>
-            </h1>
-        </div>
-        <div class="slideshow-container hidden">
-            <div class="arrowContainer arrowContainerLeft" onclick="plusSlides(-1)">
-                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-            </div>
-            <div class="mySlides fade show" id="slide1">
-                <img src="dragon1.png" class="slideImage"></img>
-            </div>
-            <div class="mySlides fade" id="slide2">
-                <img src="dragon2.jpeg" class="slideImage"></img>
-            </div>
-            <div class="mySlides fade" id="slide3">
-                <img src="dragon3.jpg" class="slideImage"></img>
-            </div>
-            <div class="arrowContainer arrowContainerRight" onclick="plusSlides(1)">
-                <a class="next" onclick="plusSlides(1)">&#10095;</a>
-            </div>
-        </div>
-        <div class="pop-up-screen hidden-pop-up" id="popUpScreen">
+        <div class="body-container">
+            <!-- <div
+            class="pop-up-screen hidden-pop-up"
+            id="popUpScreen"
+        >
             <div class="pop-up-box">
-                <p>subscribe to our newsletter for some discounts or something, idk</p>
-                <input type="text">
+                <p>
+                    subscribe to our newsletter for some discounts or something,
+                    idk
+                </p>
+                <input type="text" />
                 <button onclick="removePopUp()">Sure.</button>
             </div>
+        </div> -->
+            <div id="top-splash">
+                <h1 class="roboto-condensed-mainsplash">
+                    Personal Wellness <br />
+                    <span class="playwrite-be-vlg-mainsplash">Made Easy</span>
+                </h1>
+            </div>
+            <div class="splash-divider-one"></div>
+            <div class="slideshow-container">
+                <div class="slideshow">
+                    <!-- Left Button -->
+                    <!-- <div
+                        class="arrowContainer arrowContainerLeft"
+                        onclick="plusSlides(-1)"
+                    >
+                        &#10094;
+                    </div> -->
+                    <!-- End Left Button -->
+                    <!-- Slide Show -->
+                    <div
+                        class="mySlides show"
+                        id="slide1"
+                    >
+                        <img
+                            src="./assets/images/wellness1.png"
+                            class="slideImage"
+                        />
+                        <div class="slideTextContent">
+                            <div class="slideTextHeader"><h2>hello</h2></div>
+                            <div class="slideTextBody">goodbye</div>
+                        </div>
+                    </div>
+                    <div
+                        class="mySlides"
+                        id="slide2"
+                    >
+                        <img
+                            src="./assets/images/wellness2.png"
+                            class="slideImage"
+                        />
+                        <div class="slideTextContent">
+                            <div class="slideTextHeader">Helo</div>
+                            <div class="slideTextBody"></div>
+                        </div>
+                    </div>
+                    <div
+                        class="mySlides"
+                        id="slide3"
+                    >
+                        <img
+                            src="./assets/images/wellness3.png"
+                            class="slideImage"
+                        />
+                        <div class="slideTextContent">
+                            <div class="slideTextHeader"></div>
+                            <div class="slideTextBody"></div>
+                        </div>
+                    </div>
+                    <!-- End Slide Show -->
+                    <!-- Right Arrow -->
+                    <!-- <div
+                        class="arrowContainer arrowContainerRight"
+                        onclick="plusSlides(1)"
+                    >
+                        &#10095;
+                    </div> -->
+                    <!-- End Right -->
+                </div>
+            </div>
         </div>
-        <script src="scripts.js">
-        </script>
+        <script src="scripts.js"></script>
     </body>
 </html>
