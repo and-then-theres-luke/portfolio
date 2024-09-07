@@ -43,24 +43,23 @@ window.addEventListener("scroll", function () {
 });
 
 // SLIDESHOW FUNCTIONS
-let slideIndex = 1;
-showSlides(slideIndex);
+let slideIndex = 0;
 
 function plusSlides(n) {
     slides = document.getElementsByClassName("mySlides");
-    slides[slideIndex - 1].style.display = "none";
+    slides[slideIndex].style.display = "none";
     showSlides((slideIndex += n));
 }
 
 function showSlides(n) {
     slides = document.getElementsByClassName("mySlides");
     if (n > slides.length) {
-        slideIndex = 1;
+        slideIndex = 0;
     }
-    if (n < 1) {
+    if (n < 0) {
         slideIndex = slides.length;
     }
-    slides[slideIndex - 1].style.display = "block";
+    console.log(slideIndex);
 }
 
 // DARKMODE FUNCTIONS

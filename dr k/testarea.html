@@ -34,7 +34,7 @@
         class="lightmode"
         id="body"
     >
-        <!-- Start Slideshow -->
+        <!-- Start Slideshow Container-->
         <div class="slideshow-container">
             <!-- Left Button -->
             <div
@@ -44,6 +44,7 @@
                 &#10094;
             </div>
             <!-- End Left Button -->
+            <!-- Start Slideshow -->
             <div class="slideshow">
                 <img
                     src="./assets/images/wellness1.png"
@@ -54,15 +55,17 @@
                     <div class="slideTextBody">goodbye</div>
                 </div>
             </div>
+            <!-- End Slideshow -->
+            <!-- Right Button -->
+            <div
+                class="arrowContainer arrowContainerRight"
+                onclick="plusSlides(1)"
+            >
+                &#10095;
+            </div>
+            <!-- End Right -->
         </div>
-        <div
-            class="arrowContainer arrowContainerRight"
-            onclick="plusSlides(1)"
-        >
-            &#10095;
-        </div>
-        <!-- End Right -->
-        <!-- End Slideshow -->
+        <!-- End Container -->
         <script src="scripts.js"></script>
     </body>
 </html>

@@ -85,8 +85,8 @@ nav #links a {
 .splash-divider-one {
     width: 100vw;
     height: 40px;
-    background-color: #fde1e0;
-    box-shadow: 0px -25px 15px #fde1e0;
+    background-color: #fff;
+    box-shadow: 0px -25px 15px #fff;
 }
 .shadow {
     box-shadow: 0 1px 2px rgba(0, 0, 0, 0.15);
@@ -102,48 +102,41 @@ nav #links a {
 
 .slideshow-container {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     justify-content: center;
-    background-color: #fde1e0;
-    height: 120vh;
-    /* width: 100%; */
+    background-color: #fff;
+    height: 50vh;
 }
 
 .slideshow {
     height: 50vh;
-    width: auto;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+    width: 70vw;
 }
 
 .mySlides {
-    height: 40vh;
-    width: 40vh;
-    display: none;
+    display: flex !important;
+    flex-direction: row; /* Set row layout */
+    align-items: center; /* Align image and text vertically */
+    height: 100%;
+    width: 100%; /* Ensure it takes full width */
 }
 
 .slideImage {
-    height: inherit;
-    width: auto;
+    max-width: 30%;
+    height: auto;
 }
 
-.arrowContainerLeft {
-    position: relative;
-    opacity: 40%;
+.slideBody {
     display: flex;
-    align-items: center;
+    flex-direction: column;
     justify-content: center;
-    background-color: white;
-    border-radius: 100px;
-    align-self: center;
-    width: 50px;
-    height: 50px;
-    z-index: 999;
-    cursor: pointer;
-    left: -60px;
+    background-color: red;
+    width: 40vw;
+    max-width: 50%;
+    margin-left: 20px;
 }
 
+.arrowContainerLeft,
 .arrowContainerRight {
     position: relative;
     opacity: 40%;
@@ -157,21 +150,31 @@ nav #links a {
     height: 50px;
     z-index: 999;
     cursor: pointer;
+    background-color: red;
+}
+
+.arrowContainerLeft {
+    left: -60px;
+}
+
+.arrowContainerRight {
     right: -60px;
 }
 
-.slideShow {
-    opacity: 1;
-    transform: translateX(0%);
-    transition: all 1s;
+show {
+    display: flex;
 }
 
-.show {
+.hide {
+    display: none !important;
+}
+
+/* .show {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     transition: all 0.3s ease;
-}
+} */
 /* pop up styling */
 
 .pop-up-screen {
